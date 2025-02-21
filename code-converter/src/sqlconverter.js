@@ -72,7 +72,7 @@ const UploadConverter = () => {
       <Box display="flex" alignItems="center" gap={2} mb={3}>
         <Button variant="contained" component="label" startIcon={<FileUpload />}>
           Upload File
-          <input type="file" hidden onChange={handleFileChange} accept=".txt,.py,.js,.java,.cpp" />
+          <input type="file" hidden onChange={handleFileChange} accept=".txt,.py,.js,.java,.cpp,.sql" />
         </Button>
         {selectedFile && <Typography variant="body1">{selectedFile.name}</Typography>}
       </Box>
